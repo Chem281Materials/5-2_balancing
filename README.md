@@ -17,12 +17,14 @@ We will call `2 N2`, `5 O2`, and `2 N2O5` the terms of the equation, which in th
 ## Task
 
 The `main.rs` file includes structs for `Molecules`, `Terms`, and `Equations`, following the definitions above.
-It also includes some tests that attempt to create some new equations, and then test that they are balanced.
+`Molecules` store a `HashMap` in which the keys are the abbreviation of the atom and the values are the number of that atom in the molecule.
+
+The `main.rs` file also includes some tests that attempt to create some new equations, and then test that they are balanced.
 Currently, these tests fail because there is no implementation of `Equation::new`.
 Implement `Equation::new` so that it properly initializes and balances new equations.
-The method signature for `Equation::new` should be selected in such a way that the tests are valid as written.
+The function signature for `Equation::new` should be selected in such a way that the tests are valid as written.
 
 Balancing chemical equations in an automated fashion typically involves solving a system of linear equations; however, for the purpose of this problem, you are permitted to use brute force trial-and-error.
-You may also assume that the term coefficients will never be greater than 5.
+In your solution, you may assume that the term coefficients will never be greater than 5.
 
 Do not modify the tests.
