@@ -24,3 +24,5 @@ The method signature for `Equation::new` should be selected in such a way that t
 
 Balancing chemical equations in an automated fashion typically involves solving a system of linear equations; however, for the purpose of this problem, you are permitted to use brute force trial-and-error.
 You may also assume that the term coefficients will never be greater than 5.
+
+Do not modify the tests.
